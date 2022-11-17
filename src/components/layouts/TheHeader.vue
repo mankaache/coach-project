@@ -1,7 +1,15 @@
 <template>
-    <div>
-
-    </div>
+    <header>
+      <nav>
+        <h1><router-link to="/">Find a Coach</router-link> </h1>
+        <ul>
+          <li><router-link to='/coaches'>All coaches</router-link></li>
+          <li><router-link to='/requests'>All requests</router-link></li>
+        </ul>
+      </nav>
+    </header>
+      
+    
 </template>
 
 <script>
@@ -14,7 +22,7 @@
 header {
   width: 100%;
   height: 5rem;
-  background-color: #3d008d;
+  background-color: #064210;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +30,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: #f391e3;
+  color: #8eccf5;
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: 1px solid transparent;
@@ -31,7 +39,7 @@ header a {
 a:active,
 a:hover,
 a.router-link-active {
-  border: 1px solid #f391e3;
+  border: 1px solid #8eccf5;
 }
 
 h1 {

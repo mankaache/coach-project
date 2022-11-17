@@ -1,7 +1,5 @@
 <template>
-    <div>
-
-    </div>
+    register
 </template>
 
 <script>
