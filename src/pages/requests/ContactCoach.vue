@@ -27,10 +27,16 @@
         methods: {
             submitForm(){
                 this.formIsValid = true
-                if(this.email === "" || this.email.includes('@') || this.message === "" ){
+                if(this.email === "" || !this.email.includes('@') || this.message === "" ){
                     this.formIsValid = false
                     return
                 }
+                this.$store.dispatch('requests/contactCoach',{
+                   email : this.email,
+                   message :this.message,
+                   coachId :this.$route.params.id
+                })
+                this.$router.replace('/coaches')
             }
         },
     }
